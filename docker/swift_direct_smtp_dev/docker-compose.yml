@@ -1,0 +1,9 @@
+version: "3"
+services:
+    webapp:
+        build:
+            context: ../resources/webapp
+        volumes:
+            - "../../:/var/www/html/"
+        privileged: true
+        command: "sleep 10000000"
